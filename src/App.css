@@ -1,0 +1,66 @@
+/* ---------------        MAIN STYLES APPLIED TO ALMOST ALL THE COMPONET    ------------------------ */
+
+:root {
+    --primary: #ef233c;
+    --lightPrimary: #f25f5c;
+    --light1: #fff0f3;
+    --seconday: #2ec4b6;
+    --black: #000;
+    --white: #fff;
+    --fullwidth: 100%;
+}
+
+
+/* 
+var(--seconday)
+var(--primary)
+
+ box-shadow: 0 2px 5px rgb(0 0 0 / 10%);
+*/
+
+body,
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.rowTopgap {
+    padding: 1.8rem 0;
+    margin: 1.8rem 0;
+}
+
+.self_container-Bottomgap {
+    margin-bottom: 4rem;
+    padding-bottom: 4rem;
+}
+
+.self_container {
+    margin-top: 1.8rem;
+    margin-bottom: 4rem;
+    padding-top: 1.8rem;
+    padding-bottom: 4rem;
+}
+
+@media (max-width: 450px) {
+    .rowTopgap {
+        padding: .2rem 0 .6rem 0 !important;
+        margin: .2rem 0 .6rem 0 !important;
+    }
+
+    .self_container {
+        margin-top: 1rem !important;
+        margin-bottom: 1rem !important;
+        padding-top: 1rem !important;
+        padding-bottom: 1rem !important;
+    }
+}
+
+
+/* font-family: 'Montserrat', sans-serif; */
+
+
+/* ------ Colours ------ */
+
+.colors {
+    color: #00a19a, #68c7c2, #2fac66, #ffa200, #fff766;
+    color: #fbdad3, #a6b1cf, #bfe1e0;
+}

@@ -1,0 +1,77 @@
+#nav_head #prodigy {
+    font-family: 'Montserrat', sans-serif;
+    width: 11rem;
+    height: 2.5rem;
+}
+
+#nav_head #explore {
+    width: 13rem;
+    height: 4rem;
+}
+
+.navbar-dark .navbar-toggler-icon, .navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(0, 0, 0, 0.55)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
+.navItems {
+    font-weight: 700;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#signinbtn {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h5 #signinbtn:hover {
+    color: rgb(255, 255, 255);
+}
+
+.Button {
+    padding: 2px auto 2px auto;
+    margin-bottom: 4px;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.Button .Button-btn {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    letter-spacing: 0.2px;
+    display: inline-block;
+    padding: 5px 1.1rem;
+    border-radius: 8px;
+    transition: 0.1s;
+    margin-top: 10px;
+    text-decoration: none;
+    border: 3px solid var(--white);
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.Button .Button-btn:hover {
+    background: var(--primary);
+    /* border: 1px solid var(--black); */
+}
+
+#icoSearch {
+    padding: .6rem;
+}
+
+.modiflink {
+    color: var(--black);
+    font-weight: 500;
+    font-size: 1.1rem;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none !important;
+}
+
+.nav_top {
+    margin: 0px .7rem;
+}

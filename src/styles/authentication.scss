@@ -1,0 +1,225 @@
+.SignUppop-up {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.514);
+  font-family: "Montserrat", sans-serif;
+  /* visibility: hidden; */
+  /* opacity: 0; */
+  /* transition: all 1s ease; */
+  z-index: 99999;
+}
+
+.SignUpinput-box {
+  width: 30rem;
+  padding: 2rem 0rem;
+  border-radius: 6px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.cross-btn {
+  color: crimson;
+  height: 4rem;
+  width: 4rem;
+  font-size: 4rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.SignUpinput-box h5 {
+  color: black;
+}
+
+.SignUpinput-box input {
+  width: 100%;
+  padding: 8px;
+  outline: 0;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.SignUpinput-box button {
+  padding: 5px 8px;
+  font-size: 18px;
+  margin: auto;
+  background-color: #ef476f;
+  color: white;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  font-family: "Cormorant Infant", serif;
+  /* text-transform: uppercase; */
+  border-radius: 4px;
+}
+
+.SignUpinput-box button:hover {
+  background: #f0849d;
+  border: 2px double #c6e48f;
+}
+.SignUpinput-box input {
+  width: 100%;
+  padding: 8px;
+  outline: 0;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+.login_form {
+  color: rgba(255, 255, 255, 0.959);
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  justify-content: center;
+  align-items: center;
+  /* display: flex; */
+}
+
+.login_form .form_box {
+  padding: 1px 30px;
+  border-radius: 45px;
+  font-size: 17px;
+  background-color: rgba(255, 255, 255, 0.959);
+  width: 100%;
+  /* 70% of the popup as its parent class is relative  */
+}
+
+.loginhead {
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 0rem;
+  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(160deg, var(--primary), var(--white));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.btncenter {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 20px 10px;
+}
+
+.separator::before,
+.separator::after {
+  content: "";
+  flex: 1;
+  border-bottom: 0.5px solid grey;
+}
+
+.separator:not(:empty)::before {
+  margin-right: 0.25em;
+}
+
+.separator:not(:empty)::after {
+  margin-left: 0.25em;
+}
+
+.social-network {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-right: 1vw;
+}
+
+.social-network li {
+  display: inline;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin: 1vw;
+}
+
+.social-circle li a {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  color: #fff;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  width: 45px;
+  height: 45px;
+  font-size: 30px;
+}
+
+.social-circle li a i {
+  color: #fff;
+}
+
+.social-circle li a:hover i {
+  color: #fff;
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.subheading span {
+  display: inline-block;
+  position: relative;
+  font-weight: 700;
+  font-size: 1.18rem;
+}
+
+.subheading span:before,
+.subheading span:after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  border-bottom: 2px solid #f7fa48;
+  border-top: 2px solid rgb(230, 208, 208);
+  top: 10px;
+  width: 120px;
+}
+
+.subheading span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+
+.subheading span:after {
+  left: 100%;
+  margin-left: 15px;
+}
+
+.subheading span ::after {
+  content: "";
+  height: 3px;
+  background: #1b1b1b;
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  margin-top: -3px;
+  width: 3000px;
+}

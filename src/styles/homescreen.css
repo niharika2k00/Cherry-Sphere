@@ -1,0 +1,222 @@
+.title {
+    text-align: left;
+    padding: 1rem 0.1rem 1rem 1.5rem;
+    margin: auto;
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: white;
+    /* font-family: 'Cormorant Garamond', serif; */
+}
+
+.lead {
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 1rem 0.1rem 1rem 1.5rem;
+    color: white;
+}
+
+.jumbotron {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    background-image: url('../assets/explore1.jpg');
+}
+
+.block {
+    width: auto;
+    height: 300px;
+}
+
+.filterdropdown {
+    width: 100%;
+    background-color: #d40059;
+    margin-top: 80px;
+    transition: 0.5s;
+}
+
+.filterdropdown.show {
+    height: 100px;
+    padding: 10px;
+}
+
+#gap_top {
+    margin-top: 1.7rem;
+    padding-top: 1.7rem;
+}
+
+.self_ico {
+    padding: 0.6rem;
+}
+
+/* arraws of the slick carousel */
+
+.slick-prev:before, .slick-next:before {
+    color: black;
+}
+
+#filterflex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.CarouButton {
+    padding: 4px auto 1px auto;
+    margin-bottom: 1px;
+    margin-left: 10px;
+    display: flex;
+    align-items: flex-end;
+    color: rgb(255, 255, 255);
+}
+
+.CarouButton .carouButton-btn {
+    /* font-family: "Raleway", sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin-top: 1px;
+    text-decoration: none;
+    border: 2px solid rgb(248, 230, 230);
+    background-color: #ff7221e1;
+    color: white;
+}
+
+.CarouButton .carouButton-btn:hover {
+    background: #FF8F05;
+    border: 3px double #F72963;
+}
+
+.self_container-Bottomgap {
+    margin-bottom: 5rem;
+    padding-bottom: 4rem;
+}
+
+.card-img, .card-img-top {
+    border-radius: 1rem;
+}
+
+.hovercard {
+    border-radius: 4rem;
+    padding-bottom: 0rem;
+    /* box-shadow: 0 6px 10px rgba(0, 0, 0, .08), 0 0 6px rgba(0, 0, 0, .05); */
+    transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
+    cursor: pointer;
+    padding: 0rem;
+    margin: 0rem;
+}
+
+.hovercard .card:hover {
+    transform: scale(1.04);
+    /* box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06); */
+    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+}
+
+.card_overlay {
+    background: rgba(216, 213, 213, 0.251);
+    padding: 3px;
+    position: absolute;
+    /* visibility: hidden; */
+    bottom: 3px;
+    left: 3px;
+    right: 0px;
+    width: 100%;
+    height: 2.5rem;
+    text-align: center;
+    transition: .5s ease;
+    opacity: 0;
+}
+
+.card:hover .card_overlay {
+    opacity: 1;
+}
+
+.overlay_text {
+    /* opacity: 1; */
+    font-weight: 700;
+    color: white;
+    font-size: 1rem;
+    text-align: left;
+    padding-left: 1rem;
+}
+
+#tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#tab li {
+    float: left;
+    margin: 1rem;
+    border-radius: 1.4rem;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 10%);
+
+}
+
+#tab li a {
+    display: block;
+    color: var(--primary);
+    text-align: center;
+    padding: .6rem;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+#tab li a:hover {
+    /* background-color: #ffe66d; */
+    border-radius: 1.4rem;
+    background-image: linear-gradient(160deg, var(--light1), var(--light1));
+    color: var(--white);
+}
+
+.activee {
+    color: var(--white);
+    border-radius: 1.4rem;
+    background-image: linear-gradient(160deg, var(--light1), var(--light1));
+}
+
+/* ------------   MEDIA QUERYYY  ----------------- */
+
+@media (max-width: 450px) {
+    .title {
+        font-size: 1.8rem;
+    }
+
+    .lead {
+        font-size: 1.2rem;
+    }
+
+    #gap_top {
+        margin-top: 1rem;
+        padding-top: 1rem;
+    }
+
+    .slidergap {
+        margin: 0px 1rem;
+        padding: 0px 1rem;
+    }
+
+    .slick-dots li button:before {
+        font-family: 'slick';
+        font-size: 0px;
+    }
+
+    #gapping {
+        margin-top: .1rem;
+    }
+
+    .jumbotron {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 400px;
+    }
+}

@@ -1,0 +1,137 @@
+.profilecontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.proimg {
+    border: 3px solid #ffffff;
+}
+
+.pro_card {
+    border: 2px dashed rgba(92, 88, 88, 0.815);
+    background-color: white;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* text-align: center; */
+    padding: 1.5rem 9.6px;
+    margin: 1rem;
+}
+
+.user_data h2 {
+    letter-spacing: 1px;
+    font-size: 2.2rem;
+}
+
+.user_data p {
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: black;
+    margin-bottom: 4px;
+}
+
+.EditButton {
+    padding: 4px auto 1px auto;
+    margin-bottom: 1px;
+    margin-left: 10px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.EditButton .edit-btn {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 6px 11px;
+    border-radius: 10px;
+    transition: 0.2s;
+    margin: 1px .7rem;
+    text-decoration: none;
+    border: 2px solid #949292;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+.EditButton .edit-btn:hover {
+    background: rgb(248, 246, 246);
+    border: 2.5px solid #d90429;
+}
+
+#line .subtopic a {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--primary) !important;
+    text-decoration: none;
+}
+
+#line .subtopic a:hover {
+    color: black !important;
+}
+
+#line .subtopic a:focus {
+    color: black !important;
+    font-size: 1.2rem;
+}
+
+#centerSubmit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: .6rem;
+}
+
+.profile_head {
+    font-family: "Montserrat", sans-serif;
+    /* background: linear-gradient(160deg, #268951, #fff766); */
+    background: linear-gradient(160deg, var(--seconday), var(--seconday));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* ----------------------------------------------         ABOUT SECTION STYLES      -------------------- */
+
+#about {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+
+.form_box {
+    font-size: 1.1rem !important;
+}
+
+.profile_icon_heart {
+    padding: 2px 5px 1px .4rem;
+    color: red;
+    font-size: 2rem;
+}
+
+@media (max-width: 600px) {
+    .user_data h2 {
+        padding-top: 1rem;
+        font-size: 1.8rem;
+    }
+
+    #line .subtopic a {
+        font-weight: 700;
+        font-size: 1.15rem;
+    }
+
+    #line {
+        padding-top: 1.8rem;
+    }
+
+    .profile_head {
+        font-size: 1.4rem;
+    }
+
+    .profile_icon_heart {
+        font-size: 1.3rem;
+    }
+}

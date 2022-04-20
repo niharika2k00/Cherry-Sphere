@@ -1,0 +1,119 @@
+/* SELF CONTAINER HAVING GAPS IN THE TOP AND BOTTOM  */
+
+.self_container {
+  margin-top: 1.8rem;
+  margin-bottom: 4rem;
+  padding-top: 1.8rem;
+  padding-bottom: 4rem;
+}
+
+/* ***************************   IMAGE UPLOAD PART     ************************************* */
+
+.myrow {
+  margin: 40px;
+  padding: 1.2rem;
+  background-color: #fff;
+  display: flex;
+  border-radius: 1.2rem; // box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);      outside
+  box-shadow: inset 2px 2px 5px #9499a8, inset -5px -5px 10px #fff;
+  background-color: rgba(255, 255, 255, 0.6);
+  // background-image: url("../assets/post.jpg");
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  &:focus {
+    box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
+  }
+}
+
+.form_box {
+  padding: 1.5px 30px;
+  border-radius: 0.6rem;
+  height: 2.8rem;
+  font-size: 1.2rem;
+  background-color: rgba(255, 255, 255, 0.959);
+}
+.form_box:hover {
+  border: 0.1rem solid var(--primary);
+}
+.form-control:focus {
+  border-color: var(--primary);
+  outline: none;
+  box-shadow: none;
+  //   border: none;
+}
+
+.upload_style {
+  color: black;
+}
+
+.file {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.file > input[type="file"] {
+  display: none;
+}
+
+.file > label {
+  font-size: 1rem;
+  font-weight: 300;
+  cursor: pointer;
+  outline: 0;
+  user-select: none;
+  border-color: rgb(216, 216, 216) rgb(209, 209, 209) rgb(186, 186, 186);
+  border-style: groove;
+  border-radius: 1.4rem;
+  width: 6rem;
+  height: 6rem;
+  border-width: 1.5px;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 29%);
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.file > label > i {
+  padding-right: 5px;
+}
+
+.file--upload > label {
+  border: 1.6px ridge var(--secondary);
+}
+
+.file--upload > label:hover {
+  background-color: var(--light1);
+}
+
+.file--upload > label:active {
+  background-color: var(--white);
+}
+
+#centerbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8rem;
+}
+
+.ico_big {
+  font-size: 1.5rem;
+  color: var(--primary);
+}
+
+.modalText {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* ---------------------         MEDIA QUERYYY         --------------------- */
+@media (max-width: 450px) {
+  .myrow {
+    margin: 1.4rem auto;
+    padding: 8px;
+  }
+}

@@ -1,0 +1,96 @@
+/* *******************       POPUP STYLES              ************************* */
+
+.pop-up {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.514);
+    z-index: 99999;
+}
+
+.input-box input {
+    font-size: 1rem !important;
+}
+
+.input-box {
+    width: 50rem;
+    padding: 40px;
+    border-radius: 6px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.cross-btn {
+    color: red;
+    height: 4rem;
+    width: 4rem;
+    font-size: 4rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.input-box h5 {
+    color: black;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 8px;
+    outline: 0;
+    border-radius: 0.6rem;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* ------------------------------- */
+/*         Button Style            */
+/* ------------------------------- */
+.input-box button {
+    padding: 0.3rem 0.9rem;
+    font-size: 18px;
+    margin: auto;
+    background-color: var(--primary);
+    color: white;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    border-radius: 6px;
+    text-transform: none;
+    letter-spacing: 0.5px;
+}
+
+.input-box button:hover {
+    background: var(--lightPrimary);
+    border: 1px solid var(--lightPrimary);
+}
+
+.ButtonStyle2 {
+    padding: 0.3rem 0.9rem;
+    font-size: 18px;
+    margin: auto;
+    background-color: var(--primary);
+    color: white;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    border-radius: 6px;
+    text-transform: none;
+    letter-spacing: 0.5px;
+}
+
+.ButtonStyle2 :hover {
+    background: var(--lightPrimary);
+    border: 1px solid var(--lightPrimary);
+}

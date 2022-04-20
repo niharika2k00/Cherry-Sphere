@@ -1,0 +1,11 @@
+#otherpost {
+    font-size: 1.6rem;
+    color: #db4f2c;
+    font-weight: 700;
+}
+
+@media (max-width: 450px) {
+    #otherpost {
+        font-size: 1.2rem;
+    }
+}

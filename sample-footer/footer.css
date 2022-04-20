@@ -1,0 +1,172 @@
+.bg_image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-color: #00010c;
+}
+
+.bg_image--1 {
+    background-image: url("../assets/dark2.jpeg");
+}
+
+.bg_image.bg-position-fixed {
+    background-position: fixed;
+}
+
+[data-black-overlay]:before {
+    background-color: #00010c !important;
+}
+
+[data-black-overlay]:before {
+    background-color: #00010c;
+}
+
+[data-overlay="6"]:before, [data-black-overlay="6"]:before, [data-white-overlay="6"]:before {
+    opacity: 0.6 !important;
+}
+
+[data-overlay]:before, [data-black-overlay]:before, [data-white-overlay]:before {
+    content: "" !important;
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    height: 100% !important;
+    width: 100% !important;
+    z-index: -1 !important;
+}
+
+active-dark .active-dark .bg_image--1, .active-dark .rn-testimonial-content .inner p::before, .active-dark .rn-testimonial-content .inner p::after, .active-dark .footer-right {
+    background-image: inherit;
+}
+
+/* Set a specific color for each brand */
+
+.icon-facebook, .icon-instagram, .icon-linkedin, .icon-youtube, .icon-pinterest, .icon-quora, .icon-twitter, .icon-google, .icon-tumblr {
+    color: #fff;
+    transition: 0.3s !important;
+}
+
+.icon-facebook {
+    background: #3b5998 !important;
+}
+
+.icon-linkedin {
+    background: #0082ca !important;
+}
+
+.icon-youtube {
+    background: #ff0000 !important;
+}
+
+.icon-instagram {
+    background: #f09433 !important;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%) !important;
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%) !important;
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%) !important;
+}
+
+.icon-pinterest {
+    background: #E60023 !important;
+}
+
+.icon-quora {
+    background: #b92b26 !important;
+}
+
+.icon-twitter {
+    background: #4aa0ec !important;
+}
+
+.icon-google {
+    background: #db4437 !important;
+}
+
+.icon-tumblr {
+    background: #314358 !important;
+}
+
+.icon-facebook:hover, .icon-instagram:hover, .icon-linkedin:hover, .icon-youtube:hover, .icon-pinterest:hover, .icon-quora:hover, .icon-twitter:hover, .icon-google:hover, .icon-tumblr:hover {
+    transform: scale(1.3, 1.3);
+    -webkit-transform: scale(1.3, 1.3);
+    -moz-transform: scale(1.3, 1.3);
+    transition: 0.3s;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 15px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+/* Add a hover effect if you want */
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.subs-submit {
+    font-family: 'Montserrat', sans-serif !important;
+    transition: 0.5s !important;
+}
+
+.subs-submit:hover {
+    color: black !important;
+    transform: scale(1.1);
+    background: white !important;
+    transition: 0.5s;
+}
+
+.footer_cols li a {
+    color: #c6c9d8;
+    font-weight: 500;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+.footer_cols li i {
+    color: white;
+}
+
+.text-light {
+    color: #fbfbfb!important;
+}
+
+.for_a a {
+    text-decoration: none;
+}
+
+.form-outline.form-white .form-control {
+    color: #fff;
+}
+
+/* 
+.form-outline .form-control {
+    min-height: auto;
+    padding: .33em .75em;
+    border: 0;
+    background: transparent;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+}*/
+
+.para {
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.para2 {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    /* font-weight: 700; */
+}
+
+.fstyle {
+    font-family: 'Montserrat', sans-serif;
+}
