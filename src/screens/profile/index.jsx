@@ -6,6 +6,7 @@ import "../../styles/homescreen.css";
 import "../../styles/border.scss";
 import "../../App.css";
 import { useHistory } from "react-router-dom";
+import DefaultDp from "../../assets/defaultDp.jpg";
 import EACH_CARD from "../home/card";
 import LOAD from "../../components/loading.js";
 
@@ -57,9 +58,9 @@ const Profile_Screen = ({
     <div>
       <Container>
         <Row className="rowTopgap">
-          <Col md={6} className="profilecontainer">
+          <Col md={6} className="profileContainer">
             <img
-              src={USER.Profile_Pic}
+              src={USER.Profile_Pic || DefaultDp}
               className="rounded-circle proimg"
               alt=" "
               width="180rem"

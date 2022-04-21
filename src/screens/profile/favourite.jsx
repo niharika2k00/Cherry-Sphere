@@ -116,7 +116,7 @@ const Liked_Shots = ({
   return (
     <Container>
       <Row className="rowTopgap">
-        <Col md={6} className="profilecontainer">
+        <Col md={6} className="profileContainer">
           <img
             src={USER.Profile_Pic}
             className="rounded-circle proimg"

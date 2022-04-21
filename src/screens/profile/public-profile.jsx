@@ -96,7 +96,7 @@ const Othersprofile = ({
       <div>
         <Container>
           <Row className="rowTopgap">
-            <Col md={6} className="profilecontainer">
+            <Col md={6} className="profileContainer">
               {other &&
               other.length > 0 &&
               Object.keys(other).length !== 0 &&
