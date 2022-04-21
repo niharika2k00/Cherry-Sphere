@@ -5,6 +5,7 @@ import "../../styles/profile.css";
 import "../../styles/homescreen.css";
 import "../../App.css";
 import firebase from "firebase";
+import DefaultDp from "../../assets/defaultDp.jpg";
 import { useLocation } from "react-router-dom";
 import LOAD from "../../components/loading.js";
 import OTHER_POST from "../home/liked-post";
@@ -26,9 +27,9 @@ const Othersprofile = ({
 
   console.log(url_postId);
 
-  const [other, setOther] = useState([]);
-  const [about, setAbout] = useState([]);
-  const [otherPost, setOtherPost] = useState([]);
+  const [other, setOther] = useState(null);
+  const [about, setAbout] = useState(null);
+  const [otherPost, setOtherPost] = useState(null);
 
   // FETCHING DETAILS OF THE CORRESPONDING POST'S USER------- for profile
   const otherUserDetails = async () => {
@@ -102,7 +103,7 @@ const Othersprofile = ({
               Object.keys(other).length !== 0 &&
               other.Picture ? (
                 <img
-                  src={other.Picture}
+                  src={other.Picture || DefaultDp}
                   className="rounded-circle proimg"
                   alt=" "
                   width="180rem"
@@ -110,7 +111,7 @@ const Othersprofile = ({
                 />
               ) : (
                 <img
-                  src={other.Profile_Image}
+                  src={(other && other.Profile_Image) || DefaultDp}
                   className="rounded-circle proimg"
                   alt=" "
                   width="180rem"
@@ -121,8 +122,8 @@ const Othersprofile = ({
 
             <Col md={6}>
               <div className="user_data">
-                <h2>{other.Name} </h2>
-                <p>{other.Email}</p>
+                <h2>{other && other.Name} </h2>
+                <p>{other && other.Email}</p>
                 {about && about.length != 0 ? (
                   <div>
                     <p> City : {about.City} </p>
@@ -136,12 +137,16 @@ const Othersprofile = ({
             </Col>
           </Row>
 
-          <p id="otherpost"> {other.Name}'s Posts </p>
+          <p id="otherpost"> {other && other.Name}'s Posts </p>
+
           <hr></hr>
-          <Row style={{ padding: "4rem auto" }}>
+
+          <Row style={{ padding: "4rem auto", marginBottom: "5rem" }}>
             {loading ? (
               <LOAD />
-            ) : otherPost && otherPost.length !== 0 ? (
+            ) : (
+              otherPost &&
+              otherPost.length !== 0 &&
               otherPost.map((card) => (
                 <Col
                   key={card.id}
@@ -158,7 +163,7 @@ const Othersprofile = ({
                   />
                 </Col>
               ))
-            ) : null}
+            )}
           </Row>
         </Container>
       </div>

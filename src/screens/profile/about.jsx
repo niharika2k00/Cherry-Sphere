@@ -7,6 +7,7 @@ import "../../styles/navbar.css";
 import "../../styles/border.scss";
 import "../../App.css";
 import { useHistory } from "react-router-dom";
+import DefaultDp from "../../assets/defaultDp.jpg";
 import LOAD from "../../components/loading.js";
 import MESS from "../../components/message.js";
 import firebase from "firebase";
@@ -84,7 +85,7 @@ const About = ({
       <Row className="rowTopgap">
         <Col md={6} className="profileContainer">
           <img
-            src={USER.Profile_Pic}
+            src={USER.Profile_Pic || DefaultDp}
             className="rounded-circle proimg"
             alt=" "
             width="180rem"

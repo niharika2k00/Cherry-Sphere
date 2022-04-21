@@ -129,7 +129,7 @@ const Profile_Screen = ({
                     <h5
                       className="card-title"
                       style={{ textShadow: "1px 1px", fontSize: "1.4rem" }}>
-                      Start a post
+                      Start posting
                     </h5>
 
                     <p className="card-text">

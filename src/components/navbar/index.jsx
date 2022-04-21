@@ -7,6 +7,7 @@ import { useHistory } from "react-router-dom";
 import ExploreLOGO from "../../assets/explorepng.png";
 import { useLocation } from "react-router-dom";
 import SIGNUP_POPUP from "../Authentication/SignUp.jsx";
+import UserIcon from "../../assets/user.png";
 import Login from "../Authentication/Login.jsx";
 import app from "../../firebase/firebase.js";
 
@@ -76,7 +77,10 @@ const Navbar_top = ({
             {Object.keys(USER).length !== 0 && (
               <Nav.Link>
                 <Link to="/profile" className="modiflink nav_top">
-                  PROFILE
+                  <img
+                    src={UserIcon}
+                    style={{ width: "2rem", height: "2rem" }}
+                  />
                 </Link>
               </Nav.Link>
             )}

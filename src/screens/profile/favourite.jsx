@@ -5,6 +5,7 @@ import "../../styles/profile.css";
 import "../../styles/homescreen.css";
 import "../../App.css";
 import { useHistory } from "react-router-dom";
+import DefaultDp from "../../assets/defaultDp.jpg";
 import LIKED_CARD from "../home/liked-post";
 import LOAD from "../../components/loading.js";
 import firebase from "firebase";
@@ -114,7 +115,7 @@ const Liked_Shots = ({
       <Row className="rowTopgap">
         <Col md={6} className="profileContainer">
           <img
-            src={USER.Profile_Pic}
+            src={USER.Profile_Pic || DefaultDp}
             className="rounded-circle proimg"
             alt=" "
             width="180rem"
