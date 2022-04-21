@@ -10,10 +10,12 @@ const firebaseConfig = {
   measurementId: "G-S1SBQF0P2G",
 };
 
+// Initialize Firebase
+
+//  ----------      Version 9 [syntax, but Im using V8]    --------------------
 // const app = initializeApp(firebaseConfig);
 // export const firestore = getFirestore(app);
 
-// Initialize Firebase
 const app = firebase.initializeApp(firebaseConfig);
 // export const auth = app.auth();
 export const firestore = app.firestore();
