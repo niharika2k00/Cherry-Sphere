@@ -48,7 +48,7 @@ const App = () => {
 
   const uploadProfileImage = async () => {
     try {
-      const a = store.ref().child(`ProfileImage/${Profile_Image.name}`);
+      const a = store.ref().child(`Profile_Image/${Profile_Image.name}`);
       await a.put(Profile_Image);
       const downloadURL = await a.getDownloadURL();
 

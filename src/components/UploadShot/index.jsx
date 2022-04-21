@@ -112,12 +112,20 @@ const UploadShot_Screen = ({
     setPopup(false);
   };
 
+  console.log("USER -->> ", USER);
+
   // -----------------    FINAL UPLOAD(submit) POST HANDLER   --------------------
   const submitPostHandler = async (e) => {
     e.preventDefault();
 
     try {
       setMsg_Warn(null);
+
+      if (!Object.keys(USER).length > 0) {
+        setMsg_Warn("Please register");
+        return;
+      }
+
       setLoading(true);
       const SINGLE = await Upload_single();
       console.log("SINGLE ", SINGLE);

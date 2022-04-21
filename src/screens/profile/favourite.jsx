@@ -136,7 +136,14 @@ const Liked_Shots = ({
                 {" , "} {about[0].Country}{" "}
               </p>
             ) : (
-              <p>Please complete the details ...</p>
+              <div
+                style={{
+                  fontWeight: "400",
+                  fontSize: "1.1rem",
+                  color: "#ff0000",
+                }}>
+                Please complete your details in about section.
+              </div>
             )}
           </div>
         </Col>

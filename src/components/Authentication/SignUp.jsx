@@ -33,8 +33,8 @@ const SignUp = ({
     console.log("Email : ", email);
     console.log("Password : ", password);
 
-    const Profile_Pic = await Upload_ProfileImg();
-    console.log(Profile_Pic);
+    const profileImage = await Upload_ProfileImg();
+    console.log(profileImage);
 
     if (password !== confirmpass) {
       console.log("Wrong password");
@@ -50,7 +50,7 @@ const SignUp = ({
       console.log(result);
       await result.user.updateProfile({
         displayName: name,
-        photoURL: Profile_Pic,
+        photoURL: profileImage,
       });
       console.log("Name : ", result.user.displayName);
       setSignUp(false);
@@ -64,11 +64,11 @@ const SignUp = ({
         Email: email,
         CreatedAt: new Date(),
         Provider: "Custom",
-        Profile_Image: Profile_Pic,
+        Profile_Image: profileImage,
       };
       console.log(User_obj);
       await db.collection("users").doc(USER_CURRENT.uid).set(User_obj);
-      alert("Message summited Successfully!");
+      alert("Registered Successfully!");
       setName("");
       setEmail("");
       setConfirmpass("");

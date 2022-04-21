@@ -52,6 +52,8 @@ const Profile_Screen = ({
     }
   }, [about]);
 
+  console.log(USER.Profile_Pic);
+
   const name = USER.Name && USER.Name.split(/(\s+)/);
 
   return (
