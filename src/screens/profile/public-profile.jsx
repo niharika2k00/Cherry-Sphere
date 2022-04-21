@@ -97,7 +97,10 @@ const Othersprofile = ({
         <Container>
           <Row className="rowTopgap">
             <Col md={6} className="profilecontainer">
-              {other && Object.keys(other).length !== 0 && other.Picture ? (
+              {other &&
+              other.length > 0 &&
+              Object.keys(other).length !== 0 &&
+              other.Picture ? (
                 <img
                   src={other.Picture}
                   className="rounded-circle proimg"

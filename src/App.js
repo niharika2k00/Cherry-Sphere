@@ -46,7 +46,7 @@ const App = () => {
     if (e.target.files[0]) setProfile_Image(e.target.files[0]);
   };
 
-  const Upload_ProfileImg = async () => {
+  const uploadProfileImage = async () => {
     try {
       const a = store.ref().child(`Profile_Image/${Profile_Image.name}`);
       await a.put(Profile_Image);
@@ -188,7 +188,7 @@ const App = () => {
           Profile_Image={Profile_Image}
           setProfile_Image={setProfile_Image}
           profile_img_handle={profile_img_handle}
-          Upload_ProfileImg={Upload_ProfileImg}
+          Upload_ProfileImg={uploadProfileImage}
         />
 
         <main>
