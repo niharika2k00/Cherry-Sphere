@@ -164,7 +164,7 @@ const UploadShot_Screen = ({
 
         // console.log(POST.id);
         // ****************      GLOBAL STORAGE        ********************
-        await db.collection("posts/all_posts/all_unverified").doc(POST.id).set({
+        await db.collection("posts/all/global").doc(POST.id).set({
           Topic: topic,
           Title: title,
           Display_Name: USER.displayName,

@@ -62,22 +62,20 @@ const Liked_Shots = ({
         // console.log(LK_posts[0].arr[0])
 
         var i, j;
-        db.collection("posts/all_posts/all_unverified").onSnapshot(
-          (snapshot) => {
-            var likedposts_array = [];
-            for (i = 0; i < LK_posts[0].arr.length; i++) {
-              // array of the user Liked_Post__________ in USER COLLECTION
-              for (j = 0; j < snapshot.docs.length; j++) {
-                if (LK_posts[0].arr[i] === snapshot.docs[j].id) {
-                  console.log(snapshot.docs[j].data());
-                  // console.log(snapshot.docs[j].id);
-                  likedposts_array.push(snapshot.docs[j].data());
-                }
+        db.collection("posts/all/global").onSnapshot((snapshot) => {
+          var likedposts_array = [];
+          for (i = 0; i < LK_posts[0].arr.length; i++) {
+            // array of the user Liked_Post__________ in USER COLLECTION
+            for (j = 0; j < snapshot.docs.length; j++) {
+              if (LK_posts[0].arr[i] === snapshot.docs[j].id) {
+                console.log(snapshot.docs[j].data());
+                // console.log(snapshot.docs[j].id);
+                likedposts_array.push(snapshot.docs[j].data());
               }
             }
-            setfinal_arr(likedposts_array);
           }
-        );
+          setfinal_arr(likedposts_array);
+        });
         setLoading(false);
       } else if (
         LK_posts[0].ArrOF_LikedPostsID &&
@@ -86,24 +84,22 @@ const Liked_Shots = ({
         setLoading(true);
         console.log(LK_posts[0].ArrOF_LikedPostsID);
         var i, j;
-        db.collection("posts/all_posts/all_unverified").onSnapshot(
-          (snapshot) => {
-            var likedposts_array = [];
-            for (i = 0; i < LK_posts[0].ArrOF_LikedPostsID.length; i++) {
-              // array of the user Liked_Post__________ in USER COLLECTION
-              for (j = 0; j < snapshot.docs.length; j++) {
-                if (LK_posts[0].ArrOF_LikedPostsID[i] === snapshot.docs[j].id) {
-                  console.log(snapshot.docs[j].data());
-                  // console.log(snapshot.docs[j].id);
+        db.collection("posts/all/global").onSnapshot((snapshot) => {
+          var likedposts_array = [];
+          for (i = 0; i < LK_posts[0].ArrOF_LikedPostsID.length; i++) {
+            // array of the user Liked_Post__________ in USER COLLECTION
+            for (j = 0; j < snapshot.docs.length; j++) {
+              if (LK_posts[0].ArrOF_LikedPostsID[i] === snapshot.docs[j].id) {
+                console.log(snapshot.docs[j].data());
+                // console.log(snapshot.docs[j].id);
 
-                  likedposts_array.push(snapshot.docs[j].data());
-                }
+                likedposts_array.push(snapshot.docs[j].data());
               }
             }
-
-            setfinal_arr(likedposts_array);
           }
-        );
+
+          setfinal_arr(likedposts_array);
+        });
         setLoading(false);
       }
     } else {

@@ -48,12 +48,14 @@ const App = () => {
 
   const uploadProfileImage = async () => {
     try {
-      const a = store.ref().child(`Profile_Image/${Profile_Image.name}`);
-      await a.put(Profile_Image);
-      const downloadURL = await a.getDownloadURL();
+      if (Profile_Image && Profile_Image.name) {
+        const a = store.ref().child(`Profile_Image/${Profile_Image.name}`);
+        await a.put(Profile_Image);
+        const downloadURL = await a.getDownloadURL();
 
-      console.log(downloadURL);
-      return downloadURL;
+        console.log(downloadURL);
+        return downloadURL;
+      }
     } catch (error) {
       console.log(error);
     }
@@ -82,22 +84,9 @@ const App = () => {
     });
   }, [set_USER]);
 
-  /* useEffect(() => {
-    if (Object.keys(USER).length === 0) {
-      setTimeout(function () {
-        console.log('loggin immediately');
-        setSignUp(true);
-      }, 6000);
-    }
-    else {
-      setSignUp(false);
-      console.log("GOOOOD PERSON")
-    }
-  }, [USER]); */
-
   // Fetching ALL the posts of ALL THE USERS
   const fetch_ALL_Users_Posts = () => {
-    db.collection("posts/all_posts/all_unverified").onSnapshot((snapshot) => {
+    db.collection("posts/all/global").onSnapshot((snapshot) => {
       const listItems = snapshot.docs.map((doc) => ({
         id: doc.id,
         ...doc.data(),

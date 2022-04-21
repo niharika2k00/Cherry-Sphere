@@ -152,15 +152,9 @@ const SignUp = ({
               label="Upload Profile Picture"
               style={{ fontSize: "1.0rem" }}
               onChange={profile_img_handle}
-              required
+              // required
             />
           </Form.Group>
-
-          {/*  <div className="btncenter">
-            <Button type="submit" variant="success">
-              <b style={{ fontSize: "14px" }}>Register</b>
-            </Button>
-          </div> */}
 
           <div className="Button">
             <button

@@ -83,14 +83,14 @@ const Post_Card = ({ ID, each_cardObj, USER }) => {
           .collection("liked_posts")
           .doc(Coll_Size.docs[0].id)
           .set({ ArrOF_LikedPostsID } /* , { merge: true } */);
-        db.collection("posts/all_posts/all_unverified")
+        db.collection("posts/all/global")
           .doc(CLICKED_POST_ID)
           .update({ Like_count: firebase.firestore.FieldValue.increment(1) });
       } else if (Coll_Size.size > 0 && num_of_ID_present > 1) {
         // COLLECTION EXSIST && ALREADY LIKED
 
         console.log("YOU HAVE ALREADY LIKED THIS POST !!");
-        db.collection("posts/all_posts/all_unverified")
+        db.collection("posts/all/global")
           .doc(CLICKED_POST_ID)
           .update({ Like_count: firebase.firestore.FieldValue.increment(-1) });
         const arr = ArrOF_LikedPostsID.filter((x) => x !== ID);
@@ -105,7 +105,7 @@ const Post_Card = ({ ID, each_cardObj, USER }) => {
           .doc(USER_CURRENT.uid)
           .collection("liked_posts")
           .add({ ArrOF_LikedPostsID }); // Create Collection
-        db.collection("posts/all_posts/all_unverified")
+        db.collection("posts/all/global")
           .doc(CLICKED_POST_ID)
           .update({ Like_count: firebase.firestore.FieldValue.increment(1) });
         console.log(LikePost.id);
@@ -145,7 +145,11 @@ const Post_Card = ({ ID, each_cardObj, USER }) => {
             <div
               className="d-flex justify-content-around"
               style={{ backgroundColor: "rgba(255, 255, 255, 0)" }}>
-              <div> {each_cardObj.Title}</div>
+              <div>
+                {each_cardObj.Title.length > 18
+                  ? `${each_cardObj.Title.substring(0, 18)}...`
+                  : each_cardObj.Title}
+              </div>
               <div onClick={likePost_Handler}>
                 <i
                   className="fas fa-heart"
