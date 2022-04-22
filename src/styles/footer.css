@@ -15,11 +15,11 @@
 }
 
 [data-black-overlay]:before {
-    background-color: #00010c !important;
+    /* background-color: #00010c !important; */
 }
 
 [data-black-overlay]:before {
-    background-color: #00010c;
+    /* background-color: #00010c; */
 }
 
 [data-overlay="6"]:before, [data-black-overlay="6"]:before, [data-white-overlay="6"]:before {

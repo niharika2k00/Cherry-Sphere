@@ -155,6 +155,7 @@
 }
 
 #tab li {
+    background-color: #ffffffad;
     float: left;
     margin: 1rem;
     border-radius: 1.4rem;
@@ -176,7 +177,7 @@
     /* background-color: #ffe66d; */
     border-radius: 1.4rem;
     background-image: linear-gradient(160deg, var(--light1), var(--light1));
-    color: var(--white);
+    /* color: var(--white); */
 }
 
 .activee {

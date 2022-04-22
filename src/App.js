@@ -161,7 +161,7 @@ const App = () => {
 
   return (
     <Router>
-      <div className="App" style={{ backgroundColor: "white" }}>
+      <div className="App" style={{ backgroundColor: "#fff8cd80" }}>
         <NavigationBar
           signUp={signUp}
           setSignUp={setSignUp}
