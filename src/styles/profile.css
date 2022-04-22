@@ -19,6 +19,12 @@
     margin: 1rem;
 }
 
+.warningStyle {
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: #ff0000;
+}
+
 .user_data h2 {
     letter-spacing: 1px;
     font-size: 2.2rem;

@@ -133,12 +133,7 @@ const Liked_Shots = ({
                 {" , "} {about[0].Country}{" "}
               </p>
             ) : (
-              <div
-                style={{
-                  fontWeight: "400",
-                  fontSize: "1.1rem",
-                  color: "#ff0000",
-                }}>
+              <div className="warningStyle">
                 Please complete your details in about section.
               </div>
             )}
@@ -191,7 +186,14 @@ const Liked_Shots = ({
                 />
               </Col>
             ))
-          ) : null}
+          ) : (
+            <div
+              onClick={() => history.push("/")}
+              className="warningStyle"
+              style={{ textAlign: "center", marginTop: "4rem" }}>
+              Like posts to add in your Favourite.
+            </div>
+          )}
         </Row>
       </section>
     </Container>

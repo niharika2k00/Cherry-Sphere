@@ -112,18 +112,20 @@
 }
 
 .hovercard .card:hover {
+    border-radius: 1.2rem;
     transform: scale(1.04);
     /* box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06); */
     box-shadow: 0 0 11px rgba(33, 33, 33, .2);
 }
 
 .card_overlay {
-    background: rgba(216, 213, 213, 0.251);
+    background: rgba(216, 213, 213, 0.8);
     padding: 3px;
     position: absolute;
+    border-radius: 8px;
     /* visibility: hidden; */
-    bottom: 3px;
-    left: 3px;
+    bottom: 1.3px;
+    /* left: 3px; */
     right: 0px;
     width: 100%;
     height: 2.5rem;

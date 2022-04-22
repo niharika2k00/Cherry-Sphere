@@ -43,7 +43,10 @@ const App = () => {
   // console.log(USER_DETAILS);
 
   const profile_img_handle = (e) => {
-    if (e.target.files[0]) setProfile_Image(e.target.files[0]);
+    if (e.target && e.target.files[0]) {
+      console.log("file dp => ", e.target.files[0]);
+      setProfile_Image(e.target.files[0]);
+    }
   };
 
   const uploadProfileImage = async () => {
@@ -177,7 +180,7 @@ const App = () => {
           Profile_Image={Profile_Image}
           setProfile_Image={setProfile_Image}
           profile_img_handle={profile_img_handle}
-          Upload_ProfileImg={uploadProfileImage}
+          uploadProfileImage={uploadProfileImage}
         />
 
         <main>

@@ -33,56 +33,46 @@ const Othersprofile = ({
 
   // FETCHING DETAILS OF THE CORRESPONDING POST'S USER------- for profile
   const otherUserDetails = async () => {
-    if (Object.keys(USER).length !== 0) {
-      /*  db.collection('users').doc(url_postId).get()
-                 .then(snapshot => {
-                     setOther(snapshot.data());
-                     console.log(snapshot.data())
-                 }) */
+    /* db.collection("users")
+      .doc(url_postId)
+      .get()
+      .then((snapshot) => {
+        setOther(snapshot.data());
+        console.log(snapshot.data());
+      }); */
 
-      const a = await db.collection("users").doc(url_postId).get();
-      const getResponse = a.data();
-      setOther(getResponse);
-      console.log(getResponse);
-    } else {
-      console.log("Currently No User Logged In. ");
-    }
+    const a = await db.collection("users").doc(url_postId).get();
+    const getResponse = a.data();
+    console.log(getResponse);
+    setOther(getResponse);
   };
 
   const otherUserAbout = () => {
-    if (Object.keys(USER).length !== 0) {
-      db.collection("users")
-        .doc(url_postId)
-        .collection("about")
-        .onSnapshot((snapshot) => {
-          const ABOUT = snapshot.docs.map((doc) => ({
-            id: doc.id,
-            ...doc.data(),
-          }));
-          console.log(ABOUT[0]);
-          setAbout(ABOUT[0]);
-        });
-    } else {
-      console.log("Currently No User Logged In. ");
-    }
+    db.collection("users")
+      .doc(url_postId)
+      .collection("about")
+      .onSnapshot((snapshot) => {
+        const ABOUT = snapshot.docs.map((doc) => ({
+          id: doc.id,
+          ...doc.data(),
+        }));
+        console.log(ABOUT[0]);
+        setAbout(ABOUT[0]);
+      });
   };
 
   const otherUserPost = () => {
-    if (Object.keys(USER).length !== 0) {
-      db.collection("users")
-        .doc(url_postId)
-        .collection("posts")
-        .onSnapshot((snapshot) => {
-          const POST = snapshot.docs.map((doc) => ({
-            id: doc.id,
-            ...doc.data(),
-          }));
-          console.log(POST);
-          setOtherPost(POST);
-        });
-    } else {
-      console.log("Currently No User Logged In. ");
-    }
+    db.collection("users")
+      .doc(url_postId)
+      .collection("posts")
+      .onSnapshot((snapshot) => {
+        const POST = snapshot.docs.map((doc) => ({
+          id: doc.id,
+          ...doc.data(),
+        }));
+        console.log(POST);
+        setOtherPost(POST);
+      });
   };
 
   useEffect(() => {
@@ -97,6 +87,18 @@ const Othersprofile = ({
       <div>
         <Container>
           <Row className="rowTopgap">
+            {/*  <Col md={6} className="profileContainer">
+              {other && other.length > 0 && Object.keys(other).length !== 0 && (
+                <img
+                  src={other.Picture || other.Profile_Image || DefaultDp}
+                  className="rounded-circle proimg"
+                  alt=" "
+                  width="180rem"
+                  height="180rem"
+                />
+              )}
+            </Col> */}
+
             <Col md={6} className="profileContainer">
               {other &&
               other.length > 0 &&

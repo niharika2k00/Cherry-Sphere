@@ -22,18 +22,18 @@ const SignUp = ({
   USER,
   set_USER,
   profile_img_handle,
-  Upload_ProfileImg,
+  uploadProfileImage,
 }) => {
   const db = firebase.firestore();
   const history = useHistory();
 
-  const signUp_Handler = async (e) => {
+  const signUpHandler = async (e) => {
     e.preventDefault();
     console.log("Successfully Signed Up");
     console.log("Email : ", email);
     console.log("Password : ", password);
 
-    const profileImage = await Upload_ProfileImg();
+    const profileImage = await uploadProfileImage();
     console.log(profileImage);
 
     if (password !== confirmpass) {
@@ -67,8 +67,10 @@ const SignUp = ({
         Profile_Image: profileImage,
       };
       console.log(User_obj);
+
       await db.collection("users").doc(USER_CURRENT.uid).set(User_obj);
       alert("Registered Successfully!");
+
       setName("");
       setEmail("");
       setConfirmpass("");
@@ -79,24 +81,23 @@ const SignUp = ({
     }
   };
 
-  /*    useEffect(() => {
-           app.auth().onAuthStateChanged((user) => {
-               if (user) {
-                   console.log(user.displayName, " , ", user.uid);
-                   const User_Obj = {
-                       Name: user.displayName,
-                       Email: user.email,
-                       UID: user.uid
-                   };
-                   // console.log(User_Obj);
-                   set_USER(User_Obj);
-   
-               } else {
-                   console.log('No User');
-                   set_USER({});
-               }
-           });
-       }, []); */
+  /*   useEffect(() => {
+    app.auth().onAuthStateChanged((user) => {
+      if (user) {
+        console.log(user.displayName, " , ", user.uid);
+        const User_Obj = {
+          Name: user.displayName,
+          Email: user.email,
+          UID: user.uid,
+        };
+        // console.log(User_Obj);
+        set_USER(User_Obj);
+      } else {
+        console.log("No User");
+        set_USER({});
+      }
+    });
+  }, []); */
 
   return (
     <div className="SignUppop-up">
@@ -105,7 +106,7 @@ const SignUp = ({
 
         <h1 className="loginhead"> Sign Up </h1>
 
-        <Form onSubmit={signUp_Handler} className="login_form">
+        <Form onSubmit={signUpHandler} className="login_form">
           <Form.Group controlId="name">
             {/* <Form.Label><b>Name </b></Form.Label> */}
             <Form.Control
@@ -117,7 +118,6 @@ const SignUp = ({
           </Form.Group>
 
           <Form.Group controlId="email">
-            {/* <Form.Label><b>Email Address</b></Form.Label> */}
             <Form.Control
               className="form_box"
               type="email"
@@ -127,7 +127,6 @@ const SignUp = ({
           </Form.Group>
 
           <Form.Group controlId="password">
-            {/* <Form.Label><b>Password</b></Form.Label> */}
             <Form.Control
               className="form_box"
               type="password"
@@ -137,7 +136,6 @@ const SignUp = ({
           </Form.Group>
 
           <Form.Group controlId="confirmpassword">
-            {/* <Form.Label><b>Confirm Password</b></Form.Label> */}
             <Form.Control
               className="form_box"
               type="password"
@@ -146,13 +144,14 @@ const SignUp = ({
               onChange={(e) => setConfirmpass(e.target.value)}></Form.Control>
           </Form.Group>
 
+          {/*  If we remove required ->  ERROR  -> so keep as it is as there is NO Edit Option too. */}
           <Form.Group style={{ color: "black" }}>
             <Form.File
               // id="exampleFormControlFile1"
               label="Upload Profile Picture"
               style={{ fontSize: "1.0rem" }}
               onChange={profile_img_handle}
-              // required
+              required
             />
           </Form.Group>
 

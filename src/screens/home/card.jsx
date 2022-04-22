@@ -141,7 +141,7 @@ const Post_Card = ({ ID, each_cardObj, USER }) => {
         </Link>
 
         <div className="card_overlay">
-          <div className="overlay_text" style={{ color: "white" }}>
+          <div className="overlay_text" style={{ color: "black" }}>
             <div
               className="d-flex justify-content-around"
               style={{ backgroundColor: "rgba(255, 255, 255, 0)" }}>

@@ -29,7 +29,7 @@ const Navbar_top = ({
   Profile_Image,
   setProfile_Image,
   profile_img_handle,
-  Upload_ProfileImg,
+  uploadProfileImage,
 }) => {
   //
   const location = useLocation();
@@ -119,7 +119,7 @@ const Navbar_top = ({
               Profile_Image={Profile_Image}
               setProfile_Image={setProfile_Image}
               profile_img_handle={profile_img_handle}
-              Upload_ProfileImg={Upload_ProfileImg}
+              uploadProfileImage={uploadProfileImage}
             />
           )}
 
