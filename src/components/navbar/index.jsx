@@ -4,7 +4,7 @@ import { Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "../../styles/navbar.css";
 import { useHistory } from "react-router-dom";
-import ExploreLOGO from "../../assets/explorepng.png";
+import LOGO from "../../assets/logo.png";
 import { useLocation } from "react-router-dom";
 import SIGNUP_POPUP from "../Authentication/SignUp.jsx";
 import UserIcon from "../../assets/user.png";
@@ -55,7 +55,7 @@ const Navbar_top = ({
         style={{ padding: ".6rem", marginbottom: "0" }}>
         <LinkContainer to="/">
           <Navbar.Brand id="nav_head">
-            <img id="explore" src={ExploreLOGO} alt="EXPLORE" />
+            <img id="explore" src={LOGO} alt="EXPLORE" />
           </Navbar.Brand>
         </LinkContainer>
 
