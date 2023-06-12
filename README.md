@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+<h1 align="center">Cherry Sphere</h1>
+  <p align="center">
+    <a href="https://cherry-sphere.vercel.app/">Live Site</a> </br> </br>
+  </p>
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- ABOUT THE PROJECT -->
 
-## Available Scripts
+## About The Project
 
-In the project directory, you can run:
+Website that enables the user to create, post and share there blogs/content✏️ once they are registered. Supports email, google and facebook authentication:octocat: using Firebase. User can like others posts and visualise publishers profile.
+</br>
 
-### `npm start`
+<img src="./screen-shots/img1.png" alt=""/> <br/>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- ### Profile Page
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+  <img src="./screen-shots/img2.png" alt=""/> <br/>
+  <img src="./screen-shots/img3.png" alt=""/> <br/>
 
-### `npm test`
+- ### Single Post
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  <img src="./screen-shots/img4.png" alt=""/> <br/>
 
-### `npm run build`
+- ### Upload Post Page
+  <img src="./screen-shots/img5.png" alt=""/> <br/>
+  <img src="./screen-shots/img6.png" alt=""/> <br/>
+  <img src="./screen-shots/img7.png" alt=""/> <br/>
+  <br>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Dev Dependencies
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [React](https://reactjs.org/)
+- [Firebase](https://firebase.google.com/docs)
+- [Material UI](https://mui.com/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<!-- CONTACT -->
 
-### `npm run eject`
+## Contact
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Project Link: [https://github.com/niharika2k00/Cherry-Sphere](https://github.com/niharika2k00/Cherry-Sphere)<br/>
+LinkedIn - [Niharika Dutta](https://www.linkedin.com/in/niharika-dutta-ab40a11a6/)<br/>
+Twitter - [@niharika_2k](https://twitter.com/niharika_2k)<br/>
