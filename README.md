@@ -4,6 +4,16 @@
   </p>
 </p>
 
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary>Table of Contents</summary>
+  <ol>
+    <li><a href="#about-the-project">About The Project</a></li>
+    <li><a href="#dev-dependencies">Dev Dependencies</a></li>
+    <li><a href="#contact">Contact</a></li>  </ol>
+</details>
+
+
 <!-- ABOUT THE PROJECT -->
 
 ## About The Project
@@ -30,7 +40,7 @@ Website that enables the user to `create, post and share there blogs/content`✏
   <img src="./screen-shots/img7.png" alt=""/> <br/>
   <br>
 
-### Dev Dependencies
+## Dev Dependencies
 
 - [React](https://reactjs.org/)
 - [Firebase](https://firebase.google.com/docs)
