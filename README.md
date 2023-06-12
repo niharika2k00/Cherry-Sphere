@@ -1,6 +1,6 @@
-<h1 align="center">Cherry Sphere</h1>
+<h1 align="center">Cherry Sphere 🍒 </h1>
   <p align="center">
-    <a href="https://cherry-sphere.vercel.app/">Live Site</a> </br> </br>
+  <a href="https://cherry-sphere.vercel.app/"> <b> Live Site </b></a> </br> </br>
   </p>
 </p>
 
@@ -8,12 +8,14 @@
 
 ## About The Project
 
-Website that enables the user to create, post and share there blogs/content✏️ once they are registered. Supports email, google and facebook authentication:octocat: using Firebase. User can like others posts and visualise publishers profile.
+Website that enables the user to `create, post and share there blogs/content`✏️ once they are registered. Supports `email`, `google` and `facebook` authentication:octocat: using Firebase. User can like others posts and visualise publisher's profile.
 </br>
 
 <img src="./screen-shots/img1.png" alt=""/> <br/>
 
-- ### Profile Page
+<p align="center"> <img src="./screen-shots/img8.png" alt=""/> <br/> </p>
+
+- ### User Profile
 
   <img src="./screen-shots/img2.png" alt=""/> <br/>
   <img src="./screen-shots/img3.png" alt=""/> <br/>
@@ -22,7 +24,7 @@ Website that enables the user to create, post and share there blogs/content✏�
 
   <img src="./screen-shots/img4.png" alt=""/> <br/>
 
-- ### Upload Post Page
+- ### Upload Post
   <img src="./screen-shots/img5.png" alt=""/> <br/>
   <img src="./screen-shots/img6.png" alt=""/> <br/>
   <img src="./screen-shots/img7.png" alt=""/> <br/>
